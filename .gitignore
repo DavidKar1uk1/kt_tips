@@ -1,0 +1,2 @@
+# Ignore Database details
+/config/database.yml

@@ -1,0 +1,18 @@
+<h3>All the KT Tips</h3>
+<table class='table table-hover table-striped'>
+  <% @kt_tips.each do |kt_tip| %>
+    <tr>
+      <th>Topic</th>
+      <th>Content</th>
+      <th>Written On</th>
+      <th>Likes</th>
+    </tr>
+    <tr>
+      <td><%= kt_tip.topic %></td>
+      <td><%= kt_tip.content %></td>
+      <td><%= kt_tip.written_on %></td>
+      <td><%= '*' * (kt_tip.likes || 0) %></td>
+    </tr>
+  <% end %>
+</table>
+<a href="/">Home</a>
