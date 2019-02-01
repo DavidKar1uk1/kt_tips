@@ -1,10 +1,10 @@
 GIT
   remote: https://github.com/DavidKar1uk1/k2_connect_ruby.git
-  revision: 0073edf3bccdd9b10b2ca7f4da2e207b30f103ff
+  revision: 32bbe2f06fddcb323abbd8bffa23496568dafde4
   branch: test
   submodules: true
   specs:
-    k2_connect_ruby (0.9.3)
+    k2_connect_ruby (0.9.6)
 
 GEM
   remote: https://rubygems.org/
@@ -52,18 +52,20 @@ GEM
     tilt (2.0.9)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
+    yajl-ruby (1.4.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   activerecord
-  k2_connect_ruby (~> 0.9.1)!
+  k2_connect_ruby (~> 0.9.6)!
   pg
   rake
   sinatra
   sinatra-activerecord
   sinatra-contrib
+  yajl-ruby
 
 RUBY VERSION
    ruby 2.5.0p0
