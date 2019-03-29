@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DavidKar1uk1/k2-connect-ruby.git
-  revision: bc2998508c0bbf0e0a958009f1106e992854e2e1
+  revision: 1bf89d83680b63fec04886df9fafa27b7555449d
   branch: development
   submodules: true
   specs:

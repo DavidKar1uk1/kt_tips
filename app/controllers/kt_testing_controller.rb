@@ -22,9 +22,8 @@ class KtTestingController < Sinatra::Base
 # To receive the K2 JSON Response
   post '/parse' do
     k2_test = K2Client.new('b647be91024bc03fb9e83f92238b973a4c070269')
-    puts "Request:\t#{request.body}"
     k2_test.parse_request(request)
-    # K2Authenticator.authenticate(k2_test.hash_body, k2_test.api_secret_key, k2_test.k2_signature)
+    K2Authenticator.authenticate(k2_test.hash_body, k2_test.api_secret_key, k2_test.k2_signature)
 
   end
 
