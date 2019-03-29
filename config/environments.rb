@@ -1,3 +1,5 @@
+require_relative 'application'
+
 configure :production, :development do
   db = URI.parse('postgres://localhost/kt_tips')
   ActiveRecord::Base.establish_connection(

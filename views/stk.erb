@@ -1,0 +1,23 @@
+<h1 class="za_head">STK</h1>
+
+<div class="ze_content">
+  <!--  TABS-->
+  <div class="ze_tab_stk">
+    <button class="ze_tab_links" onclick="selectPayType(event, 'receive_stk')">RECEIVE STK PAYMENTS</button>
+    <button class="ze_tab_links" onclick="selectPayType(event, 'query_stk')">QUERY STK PAYMENTS</button>
+  </div>
+  <!--  RECEIVE STK PAYMENTS-->
+  <div class="ze_tab_content" id="receive_stk">
+    <div class="ze_form">
+    </div>
+  </div>
+  <!--  QUERY / RETRIEVE STK PAYMENTS-->
+  <div class="ze_tab_content" id="query_stk">
+    <div class="ze_form">
+    </div>
+  </div>
+</div>
+
+<script>
+    ze_link = document.getElementById('stk').style.display = 'none'
+</script>

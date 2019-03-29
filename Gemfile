@@ -9,4 +9,9 @@ gem 'sinatra'
 gem 'activerecord'
 gem 'sinatra-contrib'
 gem 'sinatra-activerecord'
-gem 'k2_connect_ruby', '~> 0.9.6', git: 'https://github.com/DavidKar1uk1/k2_connect_ruby.git', branch: 'test', submodules: true
+
+git_source(:github) { |repo| "https://github.com/#{repo}.git" }
+
+# K2 Connect Ruby Gem
+gem 'k2-connect-ruby', '~> 0.10.7', git: 'https://github.com/DavidKar1uk1/k2-connect-ruby.git', branch: 'development', submodules: true
+gem 'net-http-persistent'

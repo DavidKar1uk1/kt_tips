@@ -1,0 +1,33 @@
+<%# case %>
+<%# when @k2_subscription.event_type.to_s.include?("received") %>
+<!--  <h1 class="za_head">Buygoods Transactions Received</h1>-->
+<%# when @k2_subscription.event_type.to_s.include?("reversed") %>
+<!--  <h1 class="za_head">Buygoods Transactions Reversals</h1>-->
+<%# when @k2_subscription.event_type.to_s.include?("settlement") %>
+<!--  <h1 class="za_head">Settlement Transfer Completed</h1>-->
+<%# when @k2_subscription.event_type.to_s.include?("customer") %>
+<!--  <h1 class="za_head">Customer Created</h1>-->
+<%# else %>
+<!--  <h1 class="za_head">No Webhook Subscription</h1>-->
+<%# end %>
+<div class="ze_content">
+  <table>
+    <thead>
+      <tr>
+        <th>Event Type</th>
+        <th>Access Token</th>
+        <th>Api Secret Key</th>
+        <th colspan="3"></th>
+      </tr>
+      <tr>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+  </table>
+</div>
+
+
+

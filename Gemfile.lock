@@ -1,33 +1,36 @@
 GIT
-  remote: https://github.com/DavidKar1uk1/k2_connect_ruby.git
-  revision: 32bbe2f06fddcb323abbd8bffa23496568dafde4
-  branch: test
+  remote: https://github.com/DavidKar1uk1/k2-connect-ruby.git
+  revision: bc2998508c0bbf0e0a958009f1106e992854e2e1
+  branch: development
   submodules: true
   specs:
-    k2_connect_ruby (0.9.6)
+    k2-connect-ruby (0.10.7)
 
 GEM
   remote: https://rubygems.org/
   specs:
-    activemodel (5.2.2)
-      activesupport (= 5.2.2)
-    activerecord (5.2.2)
-      activemodel (= 5.2.2)
-      activesupport (= 5.2.2)
+    activemodel (5.2.3)
+      activesupport (= 5.2.3)
+    activerecord (5.2.3)
+      activemodel (= 5.2.3)
+      activesupport (= 5.2.3)
       arel (>= 9.0)
-    activesupport (5.2.2)
+    activesupport (5.2.3)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     arel (9.0.0)
-    backports (3.11.4)
-    concurrent-ruby (1.1.4)
-    i18n (1.5.3)
+    backports (3.12.0)
+    concurrent-ruby (1.1.5)
+    connection_pool (2.2.2)
+    i18n (1.6.0)
       concurrent-ruby (~> 1.0)
     minitest (5.11.3)
     multi_json (1.13.1)
     mustermann (1.0.3)
+    net-http-persistent (3.0.0)
+      connection_pool (~> 2.2)
     pg (1.1.4)
     rack (2.0.6)
     rack-protection (2.0.5)
@@ -59,7 +62,8 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord
-  k2_connect_ruby (~> 0.9.6)!
+  k2-connect-ruby (~> 0.10.7)!
+  net-http-persistent
   pg
   rake
   sinatra

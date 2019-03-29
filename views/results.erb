@@ -1,5 +1,5 @@
 <table class='table table-hover table-striped'>
-  <% Choices.each do |id, text| %>
+  <% @options.each do |id, text| %>
     <tr>
       <th><%= text %></th>
       <td><%= @intel[id] || 0 %>

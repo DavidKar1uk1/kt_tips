@@ -1,0 +1,29 @@
+<h1 class="za_head">TRANSFERS</h1>
+
+<div class="ze_content">
+  <!--  TABS-->
+  <div class="ze_tab_transfer">
+    <button class="ze_tab_links" onclick="selectPayType(event, 'verify_account')">VERIFY</button>
+    <button class="ze_tab_links" onclick="selectPayType(event, 'create_transfer')">CREATE</button>
+    <button class="ze_tab_links" onclick="selectPayType(event, 'query_transfer')">QUERY TRANSFER</button>
+  </div>
+  <!--  VERIFY SETTLEMENT ACCOUNT-->
+  <div class="ze_tab_content" id="verify_account">
+    <div class="ze_form">
+    </div>
+  </div>
+  <!--CREATE TRANSFER, either Blind or Targeted-->
+  <div class="ze_tab_content" id="create_transfer">
+    <div class="ze_form">
+    </div>
+  </div>
+  <!--  QUERY TRANSFER-->
+  <div class="ze_tab_content" id="query_transfer">
+    <div class="ze_form">
+    </div>
+  </div>
+</div>
+
+<script>
+    ze_link = document.getElementById('transfers').style.display = 'none'
+</script>

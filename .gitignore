@@ -1,2 +1,8 @@
 # Ignore Database details
 /config/database.yml
+
+# for intellij products
+.idea
+
+# Ignore secret key for HMAC authentication and encryption.
+/config/beauty_secrets.yml

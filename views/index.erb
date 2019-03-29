@@ -10,7 +10,7 @@
 <p>Preferred Intel Processor?</p>
 <form action='tech' method='post'>
   <ul class='unstyled'>
-    <% Choices.each do |id, text| %>
+    <% @options.each do |id, text| %>
       <li>
         <label class='radio'>
           <input type='radio' name='intel' value='<%= id %>' id='intel_<%= id %>' />

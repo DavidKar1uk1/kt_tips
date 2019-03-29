@@ -1,0 +1,48 @@
+<h1 class="za_head">PAY</h1>
+
+<div class="ze_content">
+  <!--  TABS-->
+  <div class="ze_tab">
+    <button class="ze_tab_links" onclick="selectPayType(event, 'mobile_wallet')">M-PESA</button>
+    <button class="ze_tab_links" onclick="selectPayType(event, 'bank_account')">BANK</button>
+    <button class="ze_tab_links" onclick="selectPayType(event, 'query_pay')">QUERY PAY</button>
+    <button class="ze_tab_links" onclick="selectPayType(event, 'create_pay')">CREATE PAY</button>
+  </div>
+  <!--  M-PESA-->
+  <div class="ze_tab_content" id="mobile_wallet">
+    <div class="ze_form">
+<!--        hidden field tag-->
+        <div class="ze_common_div">
+          <div class="ze_common_top_div">
+<!--            first name-->
+          </div>
+          <div class="ze_common_bottom_div">
+<!--            last name-->
+          </div>
+        </div>
+<!--        phone email and network-->
+        <br>
+<!--        submit button-->
+
+    </div>
+  </div>
+  <!--BANK-->
+  <div class="ze_tab_content" id="bank_account">
+    <div class="ze_form">
+    </div>
+  </div>
+  <!--  QUERY PAY-->
+  <div class="ze_tab_content" id="query_pay">
+    <div class="ze_form">
+    </div>
+  </div>
+  <!--CREATE PAY-->
+  <div class="ze_tab_content" id="create_pay">
+    <div class="ze_form">
+    </div>
+  </div>
+</div>
+
+<script>
+    ze_link = document.getElementById('pay').style.display = 'none'
+</script>
